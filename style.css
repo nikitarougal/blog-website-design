@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 68.76px;
+  margin: auto;
+}
+img {
+  width: 100%;
+}
+
+/* Navigation bar */
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  width: 100%;
+  background-color: rgb(73, 0, 190);
+  color: #fff;
+  margin: 0;
+}
+nav li {
+  list-style-type: none;
+  padding: 1rem;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-logo {
+  flex: 1;
+  font-size: 1.5rem;
+  user-select: none;
+}
+nav li:not(:first-child):hover {
+  background-color: rgb(242, 153, 242);
+  transition: 0.3s ease;
+}
+.icon {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media screen and (max-width: 600px) {
+  nav ul li:not(:first-child) {
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .topnav.responsive .nav-links {
+    flex-direction: column;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav.responsive .nav-links {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .icon {
+    display: block !important;
+    cursor: pointer;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: rgb(73, 0, 190);
+  padding: 20px;
+}
+footer ul {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+footer a:hover {
+  color: rgb(212, 229, 24);
+  text-decoration: underline;
+}
+.copyright {
+  color: #fff;
+  margin: 10px 0;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+/* Home Section */
+#home-section {
+  text-align: center;
+  padding: 3rem 0;
+
+  background-image: url('/world.jpg');
+  color: white;
+  width: auto;
+}
+#home-content {
+  max-width: 800px;
+  text-align: center;
+  margin: auto;
+}
+#home-section h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+#home-section p {
+  font-size: 1.5rem;
+}
+
+/* Blog Section */
+.button {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: #fff;
+  letter-spacing: 2px;
+  display: inline-block;
+  background-color: rgb(73, 0, 190);
+  padding: 10px;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: rgb(139, 103, 246);
+  transition: 0.5s ease;
+}
+#blog {
+  width: 75%;
+  margin: 65px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-gap: 30px;
+}
+.blog-element {
+  background-color: rgb(224, 210, 234);
+  padding: 17px;
+  border-radius: 5px;
+  box-shadow: 20px 20px 50px 10px rgb(194, 119, 232) inset;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.blog-element:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.content {
+  text-align: center;
+  padding: 5px 15px;
+}
+.content h3 {
+  color: rgb(73, 0, 190);
+}
+.content p {
+  font-size: 0.8rem;
+  color: rgb(67, 29, 103);
+  margin-bottom: 20px;
+}
+.image-card {
+  margin: 15px;
+}
+
+/* Contact Section */
+#contact-section {
+  background-color: black;
+  color: #fff;
+  padding-bottom: 50px;
+}
+#contact-section h2 {
+  text-align: center;
+  padding-top: 30px;
+}
+form {
+  max-width: 450px;
+  margin: 50px auto 0;
+}
+.feedback-input {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid rgb(194, 119, 232);
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+.feedback-input:focus {
+  border: 2px solid rgb(104, 21, 134);
+}
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+[type='submit'] {
+  width: 100%;
+  background: rgb(104, 21, 134);
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type='submit']:hover {
+  background: rgb(139, 103, 246);
+}

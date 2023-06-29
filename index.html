@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nik's Travels</title>
+    <link rel="icon" href="/travel-fav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="text/javascript" src="script.js" defer=""></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="topnav" id="myTopnav">
+          <li class="nav-logo">Nik Rougal</li>
+          <li class="nav-links"><a href="#home-section">Home</a></li>
+          <li class="nav-links"><a href="#blog">Blog</a></li>
+          <li class="nav-links"><a href="#contact-section">Contact</a></li>
+          <li class="icon">
+            <a href="javascript:void(0);" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home-section">
+        <!-- image as a background -->
+        <div id="home-content">
+          <h1>Nik's Travels</h1>
+          <p>
+            "Discover the World with Nik Rougal. Join us on our immersive travel adventures,
+            where we share captivating stories, stunning photographs, and valuable travel tips.
+            Let us inspire your wanderlust and guide you to extraordinary destinations."
+          </p>
+        </div>
+      </section>
+      <section id="blog">
+        <article class="blog-element">
+          <figure class="image-card"><img src="/eifel-tower.jpg" alt="Eifel Tower" /></figure>
+          <div class="content">
+            <h3>My Travels</h3>
+            <p>
+              Embark on a global journey through my travels. From breathtaking landscapes to
+              vibrant cultures, join me as I explore the world, sharing captivating moments and
+              inspiring experiences. Get ready to wander, discover, and create unforgettable
+              memories as we uncover the beauty and diversity of our planet.
+            </p>
+            <a href="/blogpost-my-travels.html" target="_blank" class="button">Get More</a>
+          </div>
+        </article>
+        <article class="blog-element">
+          <figure class="image-card">
+            <img src="/travel-info.jpg" alt="Image containig pictures of various vehicals" />
+          </figure>
+          <div class="content">
+            <h3>Travel information</h3>
+            <p>
+              Plan your trip hassle-free with our comprehensive tourist information section.
+              From obtaining visas and booking tickets to navigating local transportation and
+              finding the best accommodations, we've got you covered. Our expert tips and
+              resources will ensure a smooth and enjoyable travel experience, allowing you to
+              focus on creating unforgettable memories.
+            </p>
+            <a href="/blogpost-info.html" target="_blank" class="button">Get More</a>
+          </div>
+        </article>
+        <article class="blog-element">
+          <figure class="image-card">
+            <img src="/tips.jpg" alt="Pictures containg the word 'tips'" />
+          </figure>
+          <div class="content">
+            <h3>Travel tips</h3>
+            <p>
+              Unlock the secrets of stress-free travel with our collection of useful tips,
+              hints, and tricks. From packing smart and navigating airports to saving money and
+              staying safe while abroad, we've gathered valuable insights to enhance your
+              travel experience. Let our expert advice empower you to make the most of your
+              adventures and overcome any challenges along the way.
+            </p>
+            <a href="/blogpost-tips.html" target="_blank" class="button">Get More</a>
+          </div>
+        </article>
+      </section>
+      <section id="contact-section">
+        <h2>Contact Me</h2>
+        <form action="https://httpbin.org/post" method="post" target="_blank">
+          <input name="name" type="text" class="feedback-input" placeholder="Name" required />
+          <input
+            name="email"
+            type="text"
+            class="feedback-input"
+            placeholder="Email"
+            required
+          />
+          <textarea
+            name="text"
+            class="feedback-input"
+            placeholder="Comment"
+            required
+          ></textarea>
+          <input type="submit" value="SUBMIT" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://github.com/" class="social-media-link" target="_blank">GitHub</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/" class="social-media-link" target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/" class="social-media-link" target="_blank"
+            >TikTok</a
+          >
+        </li>
+      </ul>
+      <div class="copyright">Copyright &copy; 2023 Nik Rougal. All rights reserved.</div>
+    </footer>
+  </body>
+</html>
